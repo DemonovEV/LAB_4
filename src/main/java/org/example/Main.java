@@ -21,10 +21,13 @@ public class Main {
         for (int i = 0; i < 10; i++) {
 
         System.out.println("Протестируем  предикат : " +i + " preducate = " + p.test(i));
-        }
 
-        System.out.println(context.getBean("Max", Integer.TYPE));
+            System.out.println(context.getBean("max", Integer.TYPE));
 
-        System.out.println(context.getBean("Min", Integer.TYPE));
+            System.out.println(context.getBean("min", Integer.TYPE));
+
+            System.out.println(context.getBean("random", Integer.TYPE));
+
     }
+}
 }
