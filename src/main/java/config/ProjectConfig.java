@@ -5,6 +5,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import java.util.Date;
+import java.util.function.Predicate;
 
 @Configuration
 public class ProjectConfig {
@@ -20,4 +21,11 @@ public class ProjectConfig {
     {
         return new Date();
     }
+
+    @Bean
+    Predicate<Integer> predicate()
+    {
+        return integer -> integer>=2&&integer<=5;
+    }
+
 }
