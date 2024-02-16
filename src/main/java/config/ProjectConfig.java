@@ -28,4 +28,15 @@ public class ProjectConfig {
         return integer -> integer>=2&&integer<=5;
     }
 
+
+    @Bean
+    int Max() {
+        return 100;
+    }
+
+    @Bean
+    int Min() {
+        return 1;
+    }
+
 }

@@ -22,5 +22,9 @@ public class Main {
 
         System.out.println("Протестируем  предикат : " +i + " preducate = " + p.test(i));
         }
+
+        System.out.println(context.getBean("Max", Integer.TYPE));
+
+        System.out.println(context.getBean("Min", Integer.TYPE));
     }
 }
